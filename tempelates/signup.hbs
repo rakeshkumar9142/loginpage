@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="./public/signup.css">
+
+<style>
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styles */
+.signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* Heading styles */
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input styles */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Submit button styles */
+.signup-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-container input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+/* Link styles */
+.signup-container a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.signup-container a:hover {
+  text-decoration: underline;
+}
+
+</style>
+
+</head>
+<body>
+    
+<h1>Sign Up</h1>
+
+    <form action="/signup" method="post">
+    <label for="firstName">First Name:</label>
+    <input id="firstName" name="first_name" type="text" placeholder="Enter your first name" required>
+    <br>
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" name="last_name" type="text" placeholder="Enter your last name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone_number" placeholder="Enter your phone number" required>
+    <br>
+    <label for="password">Password:</label>
+    <input id="password" placeholder="Password" name="password" type="password" required>
+    <br>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input id="confirmPassword" placeholder="Confirm Password" name="confirm_password" type="password" required>
+    <br>
+    <input class="sub" type="submit" value="Sign Up">
+</form>
+
+       <a href="/">Go back to login page</a>
+
+</body>
+</html>
